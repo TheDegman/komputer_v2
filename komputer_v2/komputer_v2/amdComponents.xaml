@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="komputer_v2.amdComponents"
+            NavigationPage.HasNavigationBar="False">
+    <ContentPage Title="CPU">
+        <ScrollView>
+            <AbsoluteLayout>
+                <Grid BackgroundColor="#303030">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="410" />
+                        <ColumnDefinition Width="450"/>
+                    </Grid.ColumnDefinitions>
+                    <ListView     Grid.Row="0"
+                          Grid.Column="0"
+                          x:Name="cpu"
+                          RowHeight="521">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <!--<ImageCell Text="{Binding ime}" Detail="{Binding opis}" ImageSource="{Binding slika}" TextColor="White" ></ImageCell>-->
+                                <ViewCell >
+
+                                    <StackLayout BackgroundColor="#424242" Orientation="Vertical">
+
+                                        <Label Text="{Binding ime}" TextColor="White" FontSize="Large"></Label>
+                                        <Label Text="{Binding opis}"  TextColor="White"></Label>
+                                        <Image Source="{Binding slika}" MinimumHeightRequest="200" MinimumWidthRequest="200" HorizontalOptions="CenterAndExpand"></Image>
+                                        <Frame MinimumHeightRequest="70" BackgroundColor="Transparent"></Frame>
+
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+                </Grid>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,475,200,46" x:Name="amd53600" Clicked="amd53600_Clicked"></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,995,200,46" x:Name="amd55600X" Clicked="amd55600X_Clicked"></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,1517,200,46" x:Name="amd95950X" Clicked="amd95950X_Clicked"></Button>
+
+            </AbsoluteLayout>
+        </ScrollView>
+
+    </ContentPage>
+    <ContentPage Title="MOBO">
+        <ScrollView>
+            <AbsoluteLayout>
+                <Grid BackgroundColor="#303030">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="410" />
+                        <ColumnDefinition Width="450"/>
+                    </Grid.ColumnDefinitions>
+                    <ListView     Grid.Row="0"
+                          Grid.Column="0"
+                          x:Name="maticna"
+                          RowHeight="521">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <!--<ImageCell Text="{Binding ime}" Detail="{Binding opis}" ImageSource="{Binding slika}" TextColor="White" ></ImageCell>-->
+                                <ViewCell >
+
+                                    <StackLayout BackgroundColor="#424242" Orientation="Vertical">
+
+                                        <Label Text="{Binding ime}" TextColor="White" FontSize="Large"></Label>
+                                        <Label Text="{Binding opis}"  TextColor="White"></Label>
+                                        <Image Source="{Binding slika}" MinimumHeightRequest="200" MinimumWidthRequest="200" HorizontalOptions="CenterAndExpand"></Image>
+                                        <Frame MinimumHeightRequest="70" BackgroundColor="Transparent"></Frame>
+
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+                </Grid>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,475,200,46" x:Name="RAZER" Clicked="RAZER_Clicked"></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,995,200,46" x:Name="ASUS" Clicked="ASUS_Clicked"></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,1517,200,46" x:Name="MSI" Clicked="MSI_Clicked"></Button>
+
+            </AbsoluteLayout>
+        </ScrollView>
+
+    </ContentPage>
+    <ContentPage Title="RAM">
+        <ScrollView>
+            <AbsoluteLayout>
+                <Grid BackgroundColor="#303030">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="410" />
+                        <ColumnDefinition Width="450"/>
+                    </Grid.ColumnDefinitions>
+                    <ListView     Grid.Row="0"
+                          Grid.Column="0"
+                          x:Name="ram"
+                          RowHeight="421">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <!--<ImageCell Text="{Binding ime}" Detail="{Binding opis}" ImageSource="{Binding slika}" TextColor="White" ></ImageCell>-->
+                                <ViewCell >
+
+                                    <StackLayout BackgroundColor="#424242" Orientation="Vertical">
+
+                                        <Label Text="{Binding ime}" TextColor="White" FontSize="Large"></Label>
+                                        <Label Text="{Binding opis}"  TextColor="White"></Label>
+                                        <Image Source="{Binding slika}" MinimumHeightRequest="200" MinimumWidthRequest="200" HorizontalOptions="CenterAndExpand"></Image>
+                                        <Frame MinimumHeightRequest="70" BackgroundColor="Transparent"></Frame>
+
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+                </Grid>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,335,200,46" x:Name="neo" Clicked="neo_Clicked"></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,755,200,46" x:Name="corsair" Clicked="corsair_Clicked"></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,1177,200,46" x:Name="royal" Clicked="royal_Clicked"></Button>
+
+            </AbsoluteLayout>
+        </ScrollView>
+
+    </ContentPage>
+    <ContentPage Title="GPU">
+        <ScrollView>
+            <AbsoluteLayout>
+                <Grid BackgroundColor="#303030">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="410" />
+                        <ColumnDefinition Width="450"/>
+                    </Grid.ColumnDefinitions>
+                    <ListView     Grid.Row="0"
+                          Grid.Column="0"
+                          x:Name="gpu"
+                          RowHeight="421">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <!--<ImageCell Text="{Binding ime}" Detail="{Binding opis}" ImageSource="{Binding slika}" TextColor="White" ></ImageCell>-->
+                                <ViewCell >
+
+                                    <StackLayout BackgroundColor="#424242" Orientation="Vertical">
+
+                                        <Label Text="{Binding ime}" TextColor="White" FontSize="Large"></Label>
+                                        <Label Text="{Binding opis}"  TextColor="White"></Label>
+                                        <Image Source="{Binding slika}" MinimumHeightRequest="200" MinimumWidthRequest="200" HorizontalOptions="CenterAndExpand"></Image>
+                                        <Frame MinimumHeightRequest="70" BackgroundColor="Transparent"></Frame>
+
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+                </Grid>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,335,200,46" ></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,755,200,46" ></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,1217,200,46" ></Button>
+
+            </AbsoluteLayout>
+        </ScrollView>
+
+    </ContentPage>
+    <ContentPage Title="PSU">
+
+    </ContentPage>
+    <ContentPage Title="Case">
+
+    </ContentPage>
+</TabbedPage>

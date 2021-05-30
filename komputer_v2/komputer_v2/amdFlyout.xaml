@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="komputer_v2.amdFlyout"
+            FlyoutItem.IsVisible="False"
+            NavigationPage.HasNavigationBar="False">
+    <FlyoutPage.Flyout>
+
+        <ContentPage Title="menu" BackgroundColor="#303030">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350" />
+                    <ColumnDefinition Width="350"/>
+                </Grid.ColumnDefinitions>
+
+                <BoxView  x:Name="CPU1"
+                    Grid.Column="0"
+                    Grid.Row="0">
+                </BoxView>
+                
+                <BoxView  x:Name="Motherboard1"
+                    Grid.Column="0"
+                    Grid.Row="1">
+                </BoxView>
+
+                <BoxView  x:Name="RAM1"
+                    Grid.Column="0"
+                    Grid.Row="2">
+                </BoxView>
+
+                <BoxView  x:Name="GPU1"
+                    Grid.Column="0"
+                    Grid.Row="3">
+                </BoxView>
+
+                <BoxView  x:Name="PSU1"
+                    Grid.Column="0"
+                    Grid.Row="4">
+                </BoxView>
+
+                <BoxView  x:Name="Case1"
+                    Grid.Column="0"
+                    Grid.Row="11">
+                </BoxView>
+
+                <!--<ListView Grid.Column="0"
+                          Grid.Row="0"
+                          SeparatorColor="#545454"
+                         
+                          
+                          
+                          x:Name="komponente">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding ime}" TextColor="White" Tapped="TextCell_Tapped"></TextCell>
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>-->
+
+                <!--<ListView Grid.Column="0"
+                          Grid.Row="0">
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>mono</x:String>
+                            <x:String>monodroid</x:String>
+                            <x:String>monotouch</x:String>
+                            <x:String>monorail</x:String>
+                            <x:String>monodevelop</x:String>
+                            <x:String>monotone</x:String>
+                            <x:String>monopoly</x:String>
+                            <x:String>monomodal</x:String>
+                            <x:String>mononucleosis</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>-->
+
+
+
+                <Button Text="Build your PC" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="CPU"
+                    Clicked="CPU_Clicked"
+                    Grid.Column="0"
+                    Grid.Row="0"></Button>
+
+                <Button Text="Motherboard" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="Motherboard" 
+                    Clicked="Motherboard_Clicked"
+                    Grid.Column="0"
+                    Grid.Row="1"></Button>
+                
+                <Button Text="RAM" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="RAM"
+                    Clicked="RAM_Clicked"
+                    Grid.Column="0"
+                    Grid.Row="2"></Button>
+
+                <Button Text="GPU" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="GPU"
+                    Clicked="GPU_Clicked"
+                    Grid.Column="0"
+                    Grid.Row="3"></Button>
+
+                <Button Text="PSU" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="PSU"
+                    Clicked="PSU_Clicked"
+                    Grid.Column="0"
+                    Grid.Row="4"></Button>
+
+                <Button Text="Log out" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="case"
+                    Clicked="case_Clicked"
+                    Grid.Column="0"
+                    Grid.Row="11"></Button>
+
+
+            </Grid>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        <ContentPage BackgroundColor="#212121" Title="CPU">
+            <ScrollView>
+            <AbsoluteLayout>
+                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,20,420,190"></Frame>
+                <Label Text="Your CPU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,22,200,100"></Label>
+                <Image Source="" x:Name="cpuIMG" AbsoluteLayout.LayoutBounds="0,50,150,150"></Image>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="cpuName" AbsoluteLayout.LayoutBounds="170,80,250,100"></Label>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="cpuPrice" AbsoluteLayout.LayoutBounds="170,130,250,100"></Label>
+
+                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,220,420,190"></Frame>
+                <Label Text="Your Motherboard:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,222,200,100"></Label>
+                <Image Source="" x:Name="motherboardIMG" AbsoluteLayout.LayoutBounds="0,250,150,150"></Image>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="motherboardName" AbsoluteLayout.LayoutBounds="170,280,250,100"></Label>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="motherboardPrice" AbsoluteLayout.LayoutBounds="170,330,250,100"></Label>
+
+                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,420,420,190"></Frame>
+                <Label Text="Your RAM:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,422,200,100"></Label>
+                <Image Source="" x:Name="ramIMG" AbsoluteLayout.LayoutBounds="0,450,150,150"></Image>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="ramName" AbsoluteLayout.LayoutBounds="170,480,250,100"></Label>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="ramPrice" AbsoluteLayout.LayoutBounds="170,530,250,100"></Label>
+
+                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,620,420,190"></Frame>
+                <Label Text="Your GPU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,622,200,100"></Label>
+                <Image Source="" x:Name="gpuIMG" AbsoluteLayout.LayoutBounds="0,650,150,150"></Image>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="gpuName" AbsoluteLayout.LayoutBounds="170,680,250,100"></Label>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="gpuPrice" AbsoluteLayout.LayoutBounds="170,730,250,100"></Label>
+
+                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,820,420,190"></Frame>
+                <Label Text="Your PSU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,822,200,100"></Label>
+                <Image Source="" x:Name="psuIMG" AbsoluteLayout.LayoutBounds="0,850,150,150"></Image>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="psuName" AbsoluteLayout.LayoutBounds="170,880,250,100"></Label>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="psuPrice" AbsoluteLayout.LayoutBounds="170,930,250,100"></Label>
+                
+                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,1020,420,190"></Frame>
+                <Label Text="Your Case:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,1022,200,100"></Label>
+                <Image Source="" x:Name="caseIMG" AbsoluteLayout.LayoutBounds="0,1050,150,150"></Image>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="caseName" AbsoluteLayout.LayoutBounds="170,1080,250,100"></Label>
+                <Label Text="" TextColor="White" FontSize="Medium" x:Name="casePrice" AbsoluteLayout.LayoutBounds="170,1130,250,100"></Label>
+            </AbsoluteLayout>
+            </ScrollView>
+           
+
+        </ContentPage>
+            
+    </FlyoutPage.Detail>
+</FlyoutPage>
