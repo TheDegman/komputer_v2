@@ -59,6 +59,24 @@ namespace komputer_v2
                 new GPU{ime="NVIDIA GeForce RTX 3060 Ti 8GB",opis="328€",slika="rtx3060.jpg"},
                 new GPU{ime="NVIDIA GeForce RTX 2070 8GB",opis="940€",slika="rtx2070.jpg"}
             };
+            psu.ItemsSource = new List<PSU>
+            {
+                new PSU{ime="SILVERSTONE Strider Platinum 1200W",opis="230€",slika="silverstone1200W.jpg"},
+                new PSU{ime="SILVERSTONE Strider Essential 700W",opis="94€",slika="silverstone700W.jpg"},
+                new PSU{ime="CORSAIR CX550F RGB 550W",opis="85€",slika="corsair500W.jpg"}
+            };
+            ssd.ItemsSource = new List<SSD>
+            {
+                new SSD{ime="KINGSTON NV1 500 GB",opis="60€",slika="kingston500.jpg"},
+                new SSD{ime="CORSAIR Force MP400 1000 GB",opis="140€",slika="corsair1000.jpg"},
+                new SSD{ime="LC POWER Phenom Pro Series 2000 GB",opis="303€",slika="lc2000.jpg"}
+            };
+            cases.ItemsSource = new List<CASE>
+            {
+                new CASE{ime="LC POWER LC-709B-ON",opis="70€",slika="lcpower.jpg"},
+                new CASE{ime="CORSAIR iCUE 220T",opis="108€",slika="corsairicue.png"},
+                new CASE{ime="LIAN LI 011 Dynamic",opis="145€",slika="lian.jpg"}
+            };
 
 
         }
