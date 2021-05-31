@@ -10,8 +10,9 @@ namespace komputer_v2
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new amdFlyout("", "", "", "", "", "","","",""));
+            //MainPage = new NavigationPage(new amdFlyout("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "","","",""));
             //MainPage = new NavigationPage(new MainPage("dorianmarusic@gmail.com","lozinka"));
+            MainPage = new NavigationPage(new AMDvsINTEL());
         }
 
         protected override void OnStart()

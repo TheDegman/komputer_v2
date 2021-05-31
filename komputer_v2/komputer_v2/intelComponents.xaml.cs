@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace komputer_v2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class amdComponents : TabbedPage
+    public partial class intelComponents : TabbedPage
     {
         int check = 0;
         int check_cpu = 0;
@@ -44,26 +44,28 @@ namespace komputer_v2
         string casePrice;
         string caseIMG;
 
-        public amdComponents()
+        public intelComponents()
         {
             InitializeComponent();
-            maticna.ItemsSource = new List<amdMotherboard>
+            maticna.ItemsSource = new List<intelMotherboard>
             {
+                new intelMotherboard{ime="GIGABYTE B460 D3H", opis="97€", slika="giga.jpg"},
+                new intelMotherboard{ime="ASUS ROG Strix B460-F Gaming", opis="174€", slika="asusrog.jpg"},
+                new intelMotherboard{ime="ASUS ROG MAXIMUS XIII HERO", opis="513€", slika="asushero.jpg"}
 
-                new amdMotherboard{ime="ASRock B550 Taichi Razer Edition", opis="230€", slika="ASRockB550TaichiRazerEdition.jpg"},
-                new amdMotherboard{ime="ASUS TUF B450M-Plus II Gaming", opis="65€", slika="ASUSTUFB450MPlusIIGaming.png"},
-                new amdMotherboard{ime="MSI B450 TOMAHAWK MAX II", opis="98€", slika="B450TOMAHAWKMAXII.png"}
 
 
             };
-            cpu.ItemsSource = new List<amdCPU>
+            cpu.ItemsSource = new List<intelCPU>
             {
-                new amdCPU{ime="AMD Ryzen™ 5 3600", opis="170€", slika="amd53600.jpg"},
-                new amdCPU{ime="AMD Ryzen™ 5 5600X", opis="245€", slika="amd55600X.jpg"},
-                 new amdCPU{ime="AMD Ryzen™ 9 5950X", opis="805€", slika="amd95950X.jpg"}
+                new intelCPU{ime="Intel Core i9-11900K", opis="483€", slika="inteli9.jpg"},
+                new intelCPU{ime="Intel Core i7-11700", opis="302€", slika="inteli7.jpg"},
+                new intelCPU{ime="Intel Core i5-11500", opis="225€", slika="inteli5.jpg"}
+
+
 
             };
-            ram.ItemsSource = new List<RAM> 
+            ram.ItemsSource = new List<RAM>
             {
                 new RAM{ime="G.SKILL Trident Z Neo, 2x8GB",opis="125€",slika="G.SKILLTridentZNeo.jpg"},
                 new RAM{ime="CORSAIR Dominator Platinum RGB, 2x8GB",opis="100€",slika="CORSAIRDominatorPlatinumRGB.jpg"},
@@ -96,17 +98,17 @@ namespace komputer_v2
 
 
         }
-        
+
         private async void RAZER_Clicked(object sender, EventArgs e)
         {
-            
-            
-                moboName = "ASRock B550 Taichi Razer Edition";
-                moboPrice = "230€";
-                moboIMG = "ASRockB550TaichiRazerEdition.jpg";
-                
-                check=2;
-           
+
+
+            moboName = "GIGABYTE B460 D3H";
+            moboPrice = "97€";
+            moboIMG = "giga.jpg";
+
+            check = 2;
+
 
 
 
@@ -114,14 +116,14 @@ namespace komputer_v2
 
         private async void ASUS_Clicked(object sender, EventArgs e)
         {
-            
-            
-                moboName = "ASUS TUF B450M-Plus II Gaming";
-                moboPrice = "65€";
-                moboIMG = "ASUSTUFB450MPlusIIGaming.png";
-                
-                check=2;
-            
+
+
+            moboName = "ASUS ROG Strix B460-F Gaming";
+            moboPrice = "174€";
+            moboIMG = "asusrog.jpg";
+
+            check = 2;
+
 
 
 
@@ -130,14 +132,14 @@ namespace komputer_v2
 
         private async void MSI_Clicked(object sender, EventArgs e)
         {
-            
-            
-                moboName = "MSI B450 TOMAHAWK MAX II";
-                moboPrice = "98€";
-                moboIMG = "B450TOMAHAWKMAXII.png";
-                
-                check=2;
-            
+
+
+            moboName = "ASUS ROG MAXIMUS XIII HERO";
+            moboPrice = "513€";
+            moboIMG = "asushero.jpg";
+
+            check = 2;
+
 
 
 
@@ -145,29 +147,29 @@ namespace komputer_v2
 
         private async void amd53600_Clicked(object sender, EventArgs e)
         {
-           
-            
-                cpuName = "AMD Ryzen™ 5 3600";
-                cpuPrice = "170€";
-                cpuIMG = "amd53600.jpg";
-                
-                check=1;
-            
-           
+
+
+            cpuName = "Intel Core i9-11900K";
+            cpuPrice = "483€";
+            cpuIMG = "inteli9.jpg";
+
+            check = 1;
+
+
 
 
         }
 
         private async void amd55600X_Clicked(object sender, EventArgs e)
         {
-            
-                cpuName = "AMD Ryzen™ 5 5600X";
-                cpuPrice = "245€";
-                cpuIMG = "amd55600X.jpg";
-                
-                check=1;
-            
-           
+
+            cpuName = "Intel Core i7-11700";
+            cpuPrice = "302€";
+            cpuIMG = "inteli7.jpg";
+
+            check = 1;
+
+
 
 
 
@@ -175,15 +177,15 @@ namespace komputer_v2
 
         private async void amd95950X_Clicked(object sender, EventArgs e)
         {
-           
-            
-                cpuName = "AMD Ryzen™ 9 5950X";
-                cpuPrice = "805€";
-                cpuIMG = "amd95950X.jpg";
 
-                check = 1;
-            
-          
+
+            cpuName = "Intel Core i5-11500";
+            cpuPrice = "225€";
+            cpuIMG = "inteli5.jpgg";
+
+            check = 1;
+
+
 
 
         }
@@ -195,7 +197,7 @@ namespace komputer_v2
             ramIMG = "G.SKILLTridentZNeo.jpg";
 
             check = 3;
-            
+
 
 
         }
@@ -207,7 +209,7 @@ namespace komputer_v2
             ramIMG = "CORSAIRDominatorPlatinumRGB.jpg";
 
             check = 3;
-            
+
 
         }
 
@@ -218,7 +220,7 @@ namespace komputer_v2
             ramIMG = "G.SKILLTridentZRoyal.jpg";
 
             check = 3;
-            
+
 
         }
 
@@ -228,7 +230,7 @@ namespace komputer_v2
             gpuPrice = "1230€";
             gpuIMG = "rtx3080.jfif";
 
-            check =4;
+            check = 4;
 
         }
 
@@ -238,7 +240,7 @@ namespace komputer_v2
             gpuPrice = "328€";
             gpuIMG = "rtx3060.jpg";
 
-            check =4;
+            check = 4;
 
         }
 
@@ -248,7 +250,7 @@ namespace komputer_v2
             gpuPrice = "940€";
             gpuIMG = "rtx2070.jpg";
 
-            check =4;
+            check = 4;
 
         }
 
@@ -258,7 +260,7 @@ namespace komputer_v2
             psuPrice = "230€";
             psuIMG = "silverstone1200W.jpg";
 
-            check =5;
+            check = 5;
 
         }
 
@@ -268,7 +270,7 @@ namespace komputer_v2
             psuPrice = "94€";
             psuIMG = "silverstone700W.jpg";
 
-            check =5;
+            check = 5;
 
         }
 
@@ -278,7 +280,7 @@ namespace komputer_v2
             psuPrice = "85€";
             psuIMG = "corsair500W.jpg";
 
-            check =5;
+            check = 5;
 
         }
 
@@ -288,7 +290,7 @@ namespace komputer_v2
             ssdPrice = "60€";
             ssdIMG = "kingston500.jpg";
 
-            check =6;
+            check = 6;
 
         }
 
@@ -298,7 +300,7 @@ namespace komputer_v2
             ssdPrice = "140€";
             ssdIMG = "corsair1000.jpg";
 
-            check =6;
+            check = 6;
 
         }
 
@@ -308,7 +310,7 @@ namespace komputer_v2
             ssdPrice = "303€";
             ssdIMG = "lc2000.jpg";
 
-            check =6;
+            check = 6;
 
         }
 
@@ -318,10 +320,10 @@ namespace komputer_v2
             casePrice = "70€";
             caseIMG = "lcpower.jpg";
 
-            check =7;
+            check = 7;
             if (check == 7)
             {
-                await Navigation.PushAsync(new amdFlyout(cpuName, cpuPrice, cpuIMG, moboName, moboPrice, moboIMG, ramName, ramPrice, ramIMG, gpuName,gpuPrice,gpuIMG,psuName,psuPrice,psuIMG,ssdName,ssdPrice,ssdIMG,caseName, casePrice, caseIMG));
+                await Navigation.PushAsync(new amdFlyout(cpuName, cpuPrice, cpuIMG, moboName, moboPrice, moboIMG, ramName, ramPrice, ramIMG, gpuName, gpuPrice, gpuIMG, psuName, psuPrice, psuIMG, ssdName, ssdPrice, ssdIMG, caseName, casePrice, caseIMG));
             }
 
         }
@@ -332,7 +334,7 @@ namespace komputer_v2
             casePrice = "108€";
             caseIMG = "corsairicue.png";
 
-            check =7;
+            check = 7;
             if (check == 7)
             {
                 await Navigation.PushAsync(new amdFlyout(cpuName, cpuPrice, cpuIMG, moboName, moboPrice, moboIMG, ramName, ramPrice, ramIMG, gpuName, gpuPrice, gpuIMG, psuName, psuPrice, psuIMG, ssdName, ssdPrice, ssdIMG, caseName, casePrice, caseIMG));
@@ -347,7 +349,7 @@ namespace komputer_v2
             casePrice = "145€";
             caseIMG = "lian.jpg";
 
-            check =7;
+            check = 7;
             if (check == 7)
             {
                 await Navigation.PushAsync(new amdFlyout(cpuName, cpuPrice, cpuIMG, moboName, moboPrice, moboIMG, ramName, ramPrice, ramIMG, gpuName, gpuPrice, gpuIMG, psuName, psuPrice, psuIMG, ssdName, ssdPrice, ssdIMG, caseName, casePrice, caseIMG));

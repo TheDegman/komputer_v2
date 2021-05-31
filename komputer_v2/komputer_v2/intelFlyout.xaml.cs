@@ -10,15 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace komputer_v2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class amdFlyout : FlyoutPage
+    public partial class intelFlyout : FlyoutPage
     {
-        
-
-
-        /*string name, string img,string price int id*/
-
-
-        public amdFlyout(string CPUname,string CPUprice, string CPUimg, string MOBOname,string MOBOprice, string MOBOimg, string RAMname, string RAMprice, string RAMimg, string GPUname, string GPUprice, string GPUimg, string PSUname, string PSUprice, string PSUimg, string SSDname, string SSDprice, string SSDimg, string CASEname, string CASEprice, string CASEimg)
+        public intelFlyout(string CPUname, string CPUprice, string CPUimg, string MOBOname, string MOBOprice, string MOBOimg, string RAMname, string RAMprice, string RAMimg, string GPUname, string GPUprice, string GPUimg, string PSUname, string PSUprice, string PSUimg, string SSDname, string SSDprice, string SSDimg, string CASEname, string CASEprice, string CASEimg)
         {
             InitializeComponent();
             //komponente.ItemsSource = new List<DIJELOVI>
@@ -102,7 +96,7 @@ namespace komputer_v2
 
 
         }
-        
+
 
         private async void CPU_Clicked(object sender, EventArgs e)
         {
@@ -122,15 +116,17 @@ namespace komputer_v2
 
         }
 
-        
+
 
         private async void case_Clicked(object sender, EventArgs e)
         {
             Case1.Background = new SolidColorBrush(Color.FromRgb(104, 104, 104));
             await Task.Delay(40);
-            await Navigation.PushAsync(new MainPage("dorianmarusic@gmail.com", "lozinka"));
+            await Navigation.PushAsync(new MainPage("dorianmarusic@gmail.com","lozinka"));
             PSU1.Background = new SolidColorBrush(Color.FromRgb(46, 46, 46));
 
         }
+
+
     }
 }

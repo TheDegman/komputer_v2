@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="komputer_v2.amdComponents"
+             x:Class="komputer_v2.intelComponents"
             NavigationPage.HasNavigationBar="False">
     <ContentPage Title="CPU">
         <ScrollView>
@@ -40,7 +40,7 @@
 
                 </Grid>
                 <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,475,200,46" x:Name="amd53600" Clicked="amd53600_Clicked"></Button>
-                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,995,200,46" x:Name="amd55600X" Clicked="amd55600X_Clicked"></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,945,200,46" x:Name="amd55600X" Clicked="amd55600X_Clicked"></Button>
                 <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,1517,200,46" x:Name="amd95950X" Clicked="amd95950X_Clicked"></Button>
 
             </AbsoluteLayout>
@@ -85,7 +85,7 @@
                 </Grid>
                 <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,475,200,46" x:Name="RAZER" Clicked="RAZER_Clicked"></Button>
                 <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,995,200,46" x:Name="ASUS" Clicked="ASUS_Clicked"></Button>
-                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,1517,200,46" x:Name="MSI" Clicked="MSI_Clicked"></Button>
+                <Button Text="Add to your PC" MinimumHeightRequest="50" BackgroundColor="#303030" TextColor="White" AbsoluteLayout.LayoutBounds="100,1457,200,46" x:Name="MSI" Clicked="MSI_Clicked"></Button>
 
             </AbsoluteLayout>
         </ScrollView>
@@ -265,7 +265,7 @@
 
             </AbsoluteLayout>
         </ScrollView>
-        
+
     </ContentPage>
     <ContentPage Title="Case">
         <ScrollView>

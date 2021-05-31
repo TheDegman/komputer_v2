@@ -22,11 +22,12 @@ namespace komputer_v2
 
         async void amd_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new amdFlyout("","","","","","","","",""));
+            await Navigation.PushAsync(new amdFlyout("","","","","","","","","", "", "", "", "", "", "", "", "", "","","",""));
         }
 
-        private void intel_Clicked(object sender, EventArgs e)
+        private async void intel_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushAsync(new intelFlyout("", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""));
 
         }
     }

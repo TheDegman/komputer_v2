@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="komputer_v2.amdFlyout"
-            FlyoutItem.IsVisible="False"
-            NavigationPage.HasNavigationBar="False">
+             x:Class="komputer_v2.intelFlyout"
+             NavigationPage.HasNavigationBar="False">
     <FlyoutPage.Flyout>
 
         <ContentPage Title="menu" BackgroundColor="#303030">
@@ -40,7 +39,7 @@
                     Grid.Column="0"
                     Grid.Row="0">
                 </BoxView>
-                
+
                 <BoxView  x:Name="Motherboard1"
                     Grid.Column="0"
                     Grid.Row="1">
@@ -109,13 +108,13 @@
                     Clicked="Motherboard_Clicked"
                     Grid.Column="0"
                     Grid.Row="1"></Button>
-                
-                
 
                 <Button Text="Log out" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="case"
                     Clicked="case_Clicked"
                     Grid.Column="0"
                     Grid.Row="11"></Button>
+
+                
 
 
             </Grid>
@@ -125,53 +124,53 @@
     <FlyoutPage.Detail>
         <ContentPage BackgroundColor="#212121" Title="CPU">
             <ScrollView>
-            <AbsoluteLayout>
-                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,20,420,190"></Frame>
-                <Label Text="Your CPU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,22,200,100"></Label>
-                <Image Source="" x:Name="cpuIMG" AbsoluteLayout.LayoutBounds="0,50,150,150"></Image>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="cpuName" AbsoluteLayout.LayoutBounds="170,80,250,100"></Label>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="cpuPrice" AbsoluteLayout.LayoutBounds="170,130,250,100"></Label>
+                <AbsoluteLayout>
+                    <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,20,420,190"></Frame>
+                    <Label Text="Your CPU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,22,200,100"></Label>
+                    <Image Source="" x:Name="cpuIMG" AbsoluteLayout.LayoutBounds="0,50,150,150"></Image>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="cpuName" AbsoluteLayout.LayoutBounds="170,80,250,100"></Label>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="cpuPrice" AbsoluteLayout.LayoutBounds="170,130,250,100"></Label>
 
-                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,220,420,190"></Frame>
-                <Label Text="Your Motherboard:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,222,200,100"></Label>
-                <Image Source="" x:Name="motherboardIMG" AbsoluteLayout.LayoutBounds="0,250,150,150"></Image>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="motherboardName" AbsoluteLayout.LayoutBounds="170,280,250,100"></Label>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="motherboardPrice" AbsoluteLayout.LayoutBounds="170,330,250,100"></Label>
+                    <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,220,420,190"></Frame>
+                    <Label Text="Your Motherboard:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,222,200,100"></Label>
+                    <Image Source="" x:Name="motherboardIMG" AbsoluteLayout.LayoutBounds="0,250,150,150"></Image>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="motherboardName" AbsoluteLayout.LayoutBounds="170,280,250,100"></Label>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="motherboardPrice" AbsoluteLayout.LayoutBounds="170,330,250,100"></Label>
 
-                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,420,420,190"></Frame>
-                <Label Text="Your RAM:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,422,200,100"></Label>
-                <Image Source="" x:Name="ramIMG" AbsoluteLayout.LayoutBounds="0,450,150,150"></Image>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="ramName" AbsoluteLayout.LayoutBounds="170,480,250,100"></Label>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="ramPrice" AbsoluteLayout.LayoutBounds="170,530,250,100"></Label>
+                    <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,420,420,190"></Frame>
+                    <Label Text="Your RAM:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,422,200,100"></Label>
+                    <Image Source="" x:Name="ramIMG" AbsoluteLayout.LayoutBounds="0,450,150,150"></Image>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="ramName" AbsoluteLayout.LayoutBounds="170,480,250,100"></Label>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="ramPrice" AbsoluteLayout.LayoutBounds="170,530,250,100"></Label>
 
-                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,620,420,190"></Frame>
-                <Label Text="Your GPU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,622,200,100"></Label>
-                <Image Source="" x:Name="gpuIMG" AbsoluteLayout.LayoutBounds="0,650,150,150"></Image>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="gpuName" AbsoluteLayout.LayoutBounds="170,680,250,100"></Label>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="gpuPrice" AbsoluteLayout.LayoutBounds="170,730,250,100"></Label>
+                    <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,620,420,190"></Frame>
+                    <Label Text="Your GPU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,622,200,100"></Label>
+                    <Image Source="" x:Name="gpuIMG" AbsoluteLayout.LayoutBounds="0,650,150,150"></Image>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="gpuName" AbsoluteLayout.LayoutBounds="170,680,250,100"></Label>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="gpuPrice" AbsoluteLayout.LayoutBounds="170,730,250,100"></Label>
 
-                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,820,420,190"></Frame>
-                <Label Text="Your PSU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,822,200,100"></Label>
-                <Image Source="" x:Name="psuIMG" AbsoluteLayout.LayoutBounds="0,850,150,150"></Image>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="psuName" AbsoluteLayout.LayoutBounds="170,880,250,100"></Label>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="psuPrice" AbsoluteLayout.LayoutBounds="170,930,250,100"></Label>
-                
-                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,1020,420,190"></Frame>
-                <Label Text="Your SSD:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,1022,200,100"></Label>
-                <Image Source="" x:Name="ssdIMG" AbsoluteLayout.LayoutBounds="0,1050,150,150"></Image>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="ssdName" AbsoluteLayout.LayoutBounds="170,1080,250,100"></Label>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="ssdPrice" AbsoluteLayout.LayoutBounds="170,1130,250,100"></Label>
-                
-                <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,1220,420,190"></Frame>
-                <Label Text="Your Case:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,1222,200,100"></Label>
-                <Image Source="" x:Name="caseIMG" AbsoluteLayout.LayoutBounds="0,1250,150,150"></Image>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="caseName" AbsoluteLayout.LayoutBounds="170,1280,250,100"></Label>
-                <Label Text="" TextColor="White" FontSize="Medium" x:Name="casePrice" AbsoluteLayout.LayoutBounds="170,1330,250,100"></Label>
-            </AbsoluteLayout>
+                    <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,820,420,190"></Frame>
+                    <Label Text="Your PSU:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,822,200,100"></Label>
+                    <Image Source="" x:Name="psuIMG" AbsoluteLayout.LayoutBounds="0,850,150,150"></Image>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="psuName" AbsoluteLayout.LayoutBounds="170,880,250,100"></Label>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="psuPrice" AbsoluteLayout.LayoutBounds="170,930,250,100"></Label>
+
+                    <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,1020,420,190"></Frame>
+                    <Label Text="Your SSD:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,1022,200,100"></Label>
+                    <Image Source="" x:Name="ssdIMG" AbsoluteLayout.LayoutBounds="0,1050,150,150"></Image>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="ssdName" AbsoluteLayout.LayoutBounds="170,1080,250,100"></Label>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="ssdPrice" AbsoluteLayout.LayoutBounds="170,1130,250,100"></Label>
+
+                    <Frame BackgroundColor="#424242" AbsoluteLayout.LayoutBounds="0,1220,420,190"></Frame>
+                    <Label Text="Your Case:" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="0,1222,200,100"></Label>
+                    <Image Source="" x:Name="caseIMG" AbsoluteLayout.LayoutBounds="0,1250,150,150"></Image>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="caseName" AbsoluteLayout.LayoutBounds="170,1280,250,100"></Label>
+                    <Label Text="" TextColor="White" FontSize="Medium" x:Name="casePrice" AbsoluteLayout.LayoutBounds="170,1330,250,100"></Label>
+                </AbsoluteLayout>
             </ScrollView>
-           
+
 
         </ContentPage>
-            
+
     </FlyoutPage.Detail>
 </FlyoutPage>
