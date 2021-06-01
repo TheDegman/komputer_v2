@@ -8,7 +8,7 @@
         <ContentPage Title="menu" BackgroundColor="#303030">
             <Grid >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
+                    <RowDefinition Height="150" />
                     <RowDefinition Height="50" />
                     <RowDefinition Height="50" />
                     <RowDefinition Height="50" />
@@ -99,22 +99,28 @@
 
 
 
+                <Image Source="user.png" BackgroundColor="#545454" HorizontalOptions="Center" WidthRequest="350" 
+                       Grid.Column="0"
+                       Grid.Row="0"></Image>
+
                 <Button Text="Build your PC" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="CPU"
                     Clicked="CPU_Clicked"
                     Grid.Column="0"
-                    Grid.Row="0"></Button>
-
-                <Button Text="Motherboard" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="Motherboard" 
-                    Clicked="Motherboard_Clicked"
-                    Grid.Column="0"
                     Grid.Row="1"></Button>
+
+                <Button Text="Settings" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="Settings" 
+                    Clicked="Settings_Clicked"
+                    Grid.Column="0"
+                    Grid.Row="8"></Button>
+
+
 
                 <Button Text="Log out" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="Transparent" x:Name="case"
                     Clicked="case_Clicked"
                     Grid.Column="0"
-                    Grid.Row="11"></Button>
+                    Grid.Row="9"></Button>
 
-                
+
 
 
             </Grid>
@@ -166,6 +172,24 @@
                     <Image Source="" x:Name="caseIMG" AbsoluteLayout.LayoutBounds="0,1250,150,150"></Image>
                     <Label Text="" TextColor="White" FontSize="Medium" x:Name="caseName" AbsoluteLayout.LayoutBounds="170,1280,250,100"></Label>
                     <Label Text="" TextColor="White" FontSize="Medium" x:Name="casePrice" AbsoluteLayout.LayoutBounds="170,1330,250,100"></Label>
+
+                    <Label Text="ORDER INFORMATION" TextColor="White" FontSize="Large" AbsoluteLayout.LayoutBounds="40,1470,250,100"></Label>
+                    <Label Text="First name" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="40,1500,100,100"></Label>
+                    <Entry TextColor="White" BackgroundColor="#424242" x:Name="firstName" AbsoluteLayout.LayoutBounds="40,1530,150,50"></Entry>
+
+                    <Label Text="Last name" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="210,1500,100,100"></Label>
+                    <Entry TextColor="White" BackgroundColor="#424242" x:Name="lastName" AbsoluteLayout.LayoutBounds="210,1530,150,50"></Entry>
+
+                    <Label Text="Address" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="40,1580,190,100"></Label>
+                    <Entry TextColor="White" BackgroundColor="#424242" x:Name="address" AbsoluteLayout.LayoutBounds="40,1610,320,50"></Entry>
+
+                    <Label Text="City" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="40,1660,190,100"></Label>
+                    <Entry TextColor="White" BackgroundColor="#424242" x:Name="city" AbsoluteLayout.LayoutBounds="40,1690,320,50"></Entry>
+
+                    <Label Text="Zip or postal code" TextColor="White" FontSize="Medium" AbsoluteLayout.LayoutBounds="40,1740,190,100"></Label>
+                    <Entry TextColor="White" BackgroundColor="#424242" x:Name="zipCode" AbsoluteLayout.LayoutBounds="40,1770,320,50"></Entry>
+
+                    <Button Text="Order" TextColor="White" BackgroundColor="#424242" FontSize="Large" AbsoluteLayout.LayoutBounds="150,1850,100,70" x:Name="order" Clicked="order_Clicked"></Button>
                 </AbsoluteLayout>
             </ScrollView>
 

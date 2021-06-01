@@ -107,14 +107,7 @@ namespace komputer_v2
 
         }
 
-        private async void Motherboard_Clicked(object sender, EventArgs e)
-        {
-            Motherboard1.Background = new SolidColorBrush(Color.FromRgb(104, 104, 104));
-            await Task.Delay(40);
-            await Navigation.PushAsync(new amdComponents());
-            Motherboard1.Background = new SolidColorBrush(Color.FromRgb(46, 46, 46));
-
-        }
+       
 
 
 
@@ -127,6 +120,18 @@ namespace komputer_v2
 
         }
 
+        private async void Settings_Clicked(object sender, EventArgs e)
+        {
+            Case1.Background = new SolidColorBrush(Color.FromRgb(104, 104, 104));
+            await Task.Delay(40);
+            
+            PSU1.Background = new SolidColorBrush(Color.FromRgb(46, 46, 46));
 
+        }
+
+        private async void order_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Alert", "Thank you for you purchase, your order will be processed shortly, future updates about your order you will recieve to your email", "OK");
+        }
     }
 }
